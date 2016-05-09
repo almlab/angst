@@ -1,0 +1,4 @@
+species=./example/species.txt
+gene=./example/gene.txt
+output=./example/angst/
+penalties=./example/penalty.file
