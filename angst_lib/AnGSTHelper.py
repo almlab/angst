@@ -8,9 +8,11 @@ import time
 import pdb
 import PyVM
 import random
+import os
 
-# import the angst libraries
-tree_lib_dir = sys.path[0].split('/angst_lib')[0] + "/tree_lib/"
+current_path = os.path.dirname(os.path.realpath(__file__))
+tree_lib_dir = os.path.join(current_path, '..', 'tree_lib')
+tree_lib_dir = os.path.normpath(tree_lib_dir)
 sys.path.append(tree_lib_dir)
 import multitree as multitree
 import node as node
